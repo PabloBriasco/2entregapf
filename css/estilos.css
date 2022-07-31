@@ -452,7 +452,7 @@ footer p {
           
 }
 
-#formulario {
+.formulario {
     background-color: whitesmoke;
     border-radius: 20px;
     border-style: groove;

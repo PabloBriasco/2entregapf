@@ -432,19 +432,30 @@ footer p {
     "navi header header"
     "navi header header"
     "navi header header"
+    "titulo titulo titulo"
     "main main aside"
     "main main aside"
     "footer footer footer";
     gap: 30px 0;  
 }
 
+#contacto {
+    grid-area: titulo;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border-style: groove;
+}
+
 #mainContacto {
     grid-area: main;
     margin: 0;    
+          
+}
+
+#formulario {
+    background-color: whitesmoke;
     border-radius: 20px;
     border-style: groove;
-    background-color: whitesmoke;
-    opacity: 80%;
 }
 
 #formulario div {
@@ -472,11 +483,41 @@ footer p {
 .wrapperContacto aside p {
     margin: 0;
     border-radius: 20px;
-    background: rgb(207, 206, 234);
+    background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
     writing-mode: vertical-lr;
     text-orientation: upright;
     width: fit-content;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-name: animacionContacto;
+}
+
+@keyframes animacionContacto {
+    0% {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,32,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    20% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 20%, rgba(1,181,234,1) 100%);
+    }
+    40% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 40%, rgba(1,181,234,1) 100%);
+    }
+    60% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 60%, rgba(1,181,234,1) 100%);
+    }
+    80% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 80%, rgba(1,181,234,1) 100%);
+    }
+    100% {
+        background: rgb(0,36,34);
+        background: linear-gradient(90deg, rgba(0,36,34,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%, rgba(1,181,234,1) 100%);
+    }
 }
 
 
@@ -516,6 +557,7 @@ footer p {
         "navi header header"
         "navi header header"
         "navi header header"
+        "titulo titulo titulo"
         "main main main"
         "aside aside aside"
         "footer footer footer";
@@ -597,8 +639,7 @@ footer p {
         font-size: 100%;
     }    
     
-    /* Modificador de la página "Historia" */
-   
+    /* Modificador de la página "Historia" */   
 
     .mainH {
         height: 500px;
@@ -608,13 +649,7 @@ footer p {
 
     #mainContacto {
         margin: 0;   
-    }
-
-    #textArea {
-        width: 500px;
-        height: 300px;
-    } 
-    
+    }    
 }
 
 @media screen and (max-width: 767px) {
@@ -752,14 +787,7 @@ footer p {
     
     #construccion p {
         font-size: smaller;
-    }
-  
-    /* modificaciones a la página de "contacto" */
-
-    #textArea {
-        width: 80%;
-        height: 300px;
-    }   
+    }    
 
 }
 

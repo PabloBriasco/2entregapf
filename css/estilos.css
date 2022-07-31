@@ -150,6 +150,8 @@ h1 {
     "navi header header"
     "navi header header"
     "navi header header"
+    "car car car"
+    "car car car"
     "titulo titulo titulo"
     "main main aside"
     "main main aside"
@@ -163,6 +165,23 @@ header {
 
 nav {
     grid-area: navi;
+}
+
+.fuenteCar {    
+    color:blue;
+    background-color: whitesmoke;
+    opacity: 90%;
+    border-radius: 20px;
+}
+
+.carousel {
+    grid-area: car;
+    width: 100%;
+}
+
+.widthCar {
+    width: 100%;
+    max-height: 673px;    
 }
 
 #bienvenida {
@@ -634,9 +653,15 @@ footer p {
         grid-template-areas:
         "navi header header header"
         "titulo titulo titulo titulo"
+        "car car car car car"
         "main main main main"
         "aside aside aside aside"
         "footer footer footer footer";
+    }
+
+    .widthCar {
+        width: 100%;
+        max-height: 400px;    
     }
 
     /* Modificador de display de la página "Mugiwaras" */
@@ -755,8 +780,8 @@ footer p {
     
     .fuente7{
         font-size: 100%;
-    }
-
+    }    
+    
     /* Modificador de la página "Historia" */
 
     .wrapperHist {
@@ -786,6 +811,12 @@ footer p {
         height: 300px;
     } 
     
+}
+
+@media screen and (max-width: 767px) {
+    .carousel {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 630px) {

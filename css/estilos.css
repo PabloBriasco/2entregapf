@@ -139,6 +139,11 @@ h1 {
     margin-top: 0%;
 }
 
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .row {
     margin-left: 0 ;
     margin-right: 0;
@@ -300,44 +305,21 @@ footer p {
 
 /* Modificadores de la página "Marina" */
 
-.wrapperMar {
-    padding-right: 2%;
-    padding-left: 2%;
-    display: grid;
-    grid-template-areas:
-    "navi header header header header"
-    "navi header header header header"
-    "navi header header header header"
-    "titulo titulo titulo titulo titulo"
-    "main main main main main"
-    "main main main main main"
-    "footer footer footer footer footer";
-    gap: 30px 0;  
-}
-
 #marina {
-    grid-area: titulo;
     margin: 4%;    
     border-radius: 20px;
     border-style: groove;
     background-color: rgb(168, 218, 218);
     border-color: orangered;
-    opacity: 80%;   
+    opacity: 80%;    
 }
 
-#listaRangos {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 0 8%;
+#listaRangos {        
     background-color: whitesmoke;
     border-style: double;
     border-color: powderblue;
     border-width: 10px;
     border-radius: 20px;
-}
-
-#rangosMarine {    
-    width: 100%;
 }
 
 #marines {
@@ -351,53 +333,22 @@ footer p {
     border-radius: 20px;
 }
 
-.containerMarina {  
-    display: grid;
-    grid-template-rows: repeat(17, 1fr);
-    gap: 30px 0px;
-    grid-auto-flow: row;
-    
+#rangosMarine {    
+    width: 100%;
 }
 
-.marine {
-    display: grid;
-    max-height: 300px;
-    grid-template-columns: 1fr 4fr;
-    margin: 5% 0;
-    background-color: whitesmoke;
-    border-style: solid;
-    border-color: powderblue;
-    border-radius: 20px;
+.marineBtn {
+    min-height: 120px;
 }
 
-.marine div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.marineCard {
+    width: 280px;
 }
 
-.marine img {
-    border-radius: 20px ;
-    height: 294px;
-} 
-
-.marine div h4 {
-    margin: 10px 0;
-    font-family: 'Playfair Display', serif;
-    font-size: 200%;
-    color: black;
-    text-align: center;
-    text-decoration: wavy;
+.marineList div {
+    min-width: 280px;
 }
 
-.marine div p {
-    font-family: Libre Baskerville, serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: forestgreen;
-    padding: 10px;
-    text-align: center;
-}
 
 /* Modificadores de la página "Otros Piratas" */
 
@@ -641,27 +592,6 @@ footer p {
        gap: 10px 0px;
     }   
     
-    /* Modificador de display de la página "Marina" */
-
-    .containerMarina {          
-        grid-template-rows: repeat(9, 1fr);
-        grid-template-columns: 1fr 1fr;
-        gap: 30px 10px;        
-    }
-
-    .marine {
-        max-height: none ;
-        grid-template-columns: 1fr;        
-        margin: 5% 0;
-        justify-items: center;
-        align-items:center;
-    }
-
-    .marine img {
-        border-radius: 20px ;
-        max-height: 500px;
-        max-width: 300px;
-    } 
 
     /* Modificador de Display de la página "Contacto" */
 
@@ -758,12 +688,6 @@ footer p {
         height: 500px;
     }
 
-    /* Modificador del display de la página "Marina */
-    
-    .wrapperMar {
-        padding: 0;
-    }
-
     /* modificaciones a la página "contacto" */
 
     #mainContacto {
@@ -824,33 +748,7 @@ footer p {
        "navi"
        "main"       
        "footer";
-    }   
-
-    /* Modificador del Display de la página "Marina" */
-
-    .wrapperMar {
-        grid-template-areas:
-       "header"
-       "navi"
-       "titulo"
-       "main"       
-       "footer";
-    }   
-
-    #listaRangos {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #listaRangos img {
-        width: 100%;
-    }
-
-    .containerMarina {          
-        grid-template-rows: repeat(17, 1fr);
-        grid-template-columns: 1fr;
-        gap: 30px 10px;        
-    }
+    }  
 
     /* Modificador del Display de la página "Otros Piratas" */
 

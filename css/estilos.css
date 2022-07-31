@@ -4,7 +4,8 @@
   }
 
 a:link, a:visited, a:active {
-    text-decoration:none;
+    color: black;
+    text-decoration: none;
 }
 
 body {
@@ -138,6 +139,11 @@ h1 {
     margin-top: 0%;
 }
 
+.row {
+    margin-left: 0 ;
+    margin-right: 0;
+}
+
 
 /* Modificadores del Index */
 
@@ -269,27 +275,9 @@ footer p {
     max-width: 300px;
 }
 
-.row {
-    margin-left: 0 ;
-    margin-right: 0;
-}
-
 
 /* Modificadores de la página Historia */
 
-.wrapperHist {
-    padding-right: 2%;
-    padding-left: 2%;
-    display: grid;
-    grid-template-areas:
-    "navi header header header header"
-    "navi header header header header"
-    "navi header header header header"
-    "main main main main main"
-    "main main main main main"    
-    "footer footer footer footer footer";
-    gap: 30px 0;    
-} 
 
 #construccion {
     margin: 4%;    
@@ -302,6 +290,12 @@ footer p {
 #construccion img {
     height: 100px;
     min-width: 100px;
+    border-radius: 20px;
+}
+
+.footerH {
+    position: absolute;
+    
 }
 
 /* Modificadores de la página "Marina" */
@@ -758,15 +752,10 @@ footer p {
     }    
     
     /* Modificador de la página "Historia" */
+   
 
-    .wrapperHist {
-        min-height: 100vh;
-        position: relative;
-    }
-
-    .wrapperHist footer {
-        position: absolute;
-        bottom: 2px;
+    .mainH {
+        height: 500px;
     }
 
     /* Modificador del display de la página "Marina */

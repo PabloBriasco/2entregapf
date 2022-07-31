@@ -4,7 +4,7 @@
   }
 
 a:link, a:visited, a:active {
-    color: black;
+    color: red;
     text-decoration: none;
 }
 
@@ -352,23 +352,7 @@ footer p {
 
 /* Modificadores de la página "Otros Piratas" */
 
-.wrapperOP {
-    padding-right: 2%;
-    padding-left: 2%;
-    display: grid;
-    grid-template-areas:
-    "navi header header header header"
-    "navi header header header header"
-    "navi header header header header"
-    "titulo titulo titulo titulo titulo"
-    "main main main main main"
-    "main main main main main"
-    "footer footer footer footer footer";
-    gap: 30px 0;  
-}
-
-#otrosPiratas {
-    grid-area: titulo;
+#otrosPiratas {    
     margin: 4%;    
     border-radius: 20px;
     border-style: groove;
@@ -385,10 +369,6 @@ footer p {
     color: white;
 }
 
-.yonkoIntro p {
-    text-align: center;
-}
-
 #yonko2 {
     margin: 4%;    
     border-radius: 20px;    
@@ -401,101 +381,25 @@ footer p {
     padding: 5%;
 }
 
-#yonko2 div p {
-    text-align: center;
-}
-
 #yonko2 div img {
-    height: 250px;
+    max-width: 100%;
     border-radius: 20px;
-}
-
-#shichibukai p {
-    text-align: center;
-}
-
-.gridShiDer {
-    display: grid;
-    grid-template-areas: 
-    "foto titulo titulo"
-    "foto parrafo parrafo"
-    "foto parrafo parrafo";
-    grid-column-gap: 20px;
-}
-
-.gridShiDer img {
-    grid-area: foto;
-}
-
-.gridShiDer h3 {
-    grid-area: titulo;
-    font-family: 'Playfair Display', serif;
-    font-size: 200%;    
-}
-
-.gridShiDer p {
-    grid-area: parrafo;   
-    align-self: center;
-    font-family: Libre Baskerville, serif;
-    font-size: 20px;
-    font-weight: 600; 
-    text-align: justify;
-}
-
-.gridShiIzq {
-    display: grid;
-    grid-template-areas: 
-    "titulo titulo foto"
-    "parrafo parrafo foto"
-    "parrafo parrafo foto";
-    grid-column-gap: 20px;
-}
-
-.gridShiIzq img {
-    grid-area: foto;
-}
-
-.gridShiIzq h3 {
-    grid-area: titulo;
-    font-family: 'Playfair Display', serif;
-    font-size: 200%;    
-}
-
-.gridShiIzq p {
-    grid-area: parrafo;   
-    align-self: center;
-    font-family: Libre Baskerville, serif;
-    font-size: 20px;
-    font-weight: 600; 
-    text-align: justify;
 }
 
 #shichibukai {
-    margin: 10% 4% 4% 4%;    
+    padding: 10px;   
     border-radius: 20px;    
     background-color: black;
     color: white;
 }
 
-#shichibukai2 {
-    margin: 4%;    
-    border-radius: 20px;    
-    background-color: black;
-    border: orange double;
-    color: white;
+#shichibukai2 img {
+    max-width: 260px;
 }
 
-#shichibukai2 div {
-    padding: 5%;
-}
-
-#shichibukai2 div img {
-    height: 250px;
-    border-radius: 20px;
-}
-
-#shichibukai2 h3 {
-    text-align: center;
+.accordion-body {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Modificadores de la página "contacto" */

@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece - Otros Piratas</title>
+    <!-- Link al CND de Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Link al CSS -->
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Fuentes de Google -->
@@ -17,35 +21,49 @@
 </head>
 
 <body>
-    <div class="wrapperOP">
+    <div class="container-fluid">
 
-        <!-- Encabezado de la página con Banner/logo y botón que lleva al inicio -->
+        <!-- Row con nav y Header -->
 
-        <header>
-            <a href="index.html"><img src="media/logo.webp" alt="meme" id="banner"></a>
-            <h1 class="fuente4">Camino a <span>Laugh Tale</span></h1>
-        </header>
-    
+        <div class="row flex-wrap-reverse"> 
+
         <!-- Menú principal que nos permite movernos entre las distintas páginas del sitio -->
     
-        <nav>
-            <ul class="navList">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="mugiwaras.html">Mugiwaras</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="marina.html">Marina</a></li>
-                <li><a href="otrosPiratas.html">Otros Piratas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+            <div class="col-12 col-sm-2 d-flex justify-content-sm-center navmugi">
+                <nav class="mx-auto">        
+                    <ul class="navList bootNav me-0">
+                        <li  id="prueba"><a href="index.html">Inicio</a></li>
+                        <li><a href="mugiwaras.html">Mugiwaras</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="marina.html">Marina</a></li>
+                        <li><a href="otrosPiratas.html">Otros Piratas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>        
+                </nav>  
+            </div>
+
+        <!-- Encabezado de la página con Banner/logo y botón que lleva al inicio -->
+        
+            <div class="col-12 col-sm-10 px-0 px-sm-1">
+                <header>
+                    <a href="index.html"><img src="media/logo.webp" alt="meme" id="banner" ></a>
+                    <h1 class="fuente4">Camino a <span>Laugh Tale</span></h1>     
+                </header>
+            </div>
+
+        </div>
 
         <!-- Texto introductorio a la página -->
 
-        <div class="fuente2" id="otrosPiratas">
-            <h2>Otros Piratas</h2>
-            <p>A lo largo de sus aventuras, los sombreros de paja se encontrarán con una infinidad de piratas. Algunos
-                más débiles, otros increíblemente poderosos, aliados o enemigos a muerte, todos ellos comparten algo en
-                común: el deseo de navegar hasta el fin del mundo y hacerse con el One Piece!</p>
+        <div class="row">
+            <div class="col">
+                <div class="fuente2" id="otrosPiratas">
+                    <h2>Otros Piratas</h2>
+                        <p>A lo largo de sus aventuras, los sombreros de paja se encontrarán con una infinidad de piratas. Algunos
+                        más débiles, otros increíblemente poderosos, aliados o enemigos a muerte, todos ellos comparten algo en
+                        común: el deseo de navegar hasta el fin del mundo y hacerse con el One Piece!</p>
+                </div>
+            </div>
         </div>
 
         <!-- Contenido principal de la página -->
@@ -54,154 +72,301 @@
 
             <!-- Yonko -->
 
-            <div class="yonkoIntro" id="yonko">
-                <h2 class="fuente2">Los Cuatro Emperadores</h2>
-                <p class="fuente1">Se conoce como los cuatro emperadores (Yonko) a los cuatro piratas más fuertes del Nuevo
-                    Mundo (el océano
-                    más peligroso del mundo). Cada uno de estos piratas por sí solo representa una enorme amenaza al
-                    gobierno
-                    mundial, ya que su poder rivaliza con el de toda la <a href="marina.html#marina">Marine</a>. Los cuatro
-                    emperadores constituyen uno de los tres pilares que equilibran el poder en el mundo.</p>
-            </div>    
-    
+            <div class="row">
+                <div class="col">
+                    <div class="yonkoIntro mb-5" id="yonko">
+                        <h2 class="fuente2">Los Cuatro Emperadores</h2>
+                        <p class="fuente1 text-center">Se conoce como los cuatro emperadores (Yonko) a los cuatro piratas más fuertes del Nuevo
+                            Mundo (el océano
+                            más peligroso del mundo). Cada uno de estos piratas por sí solo representa una enorme amenaza al
+                            gobierno mundial, ya que su poder rivaliza con el de toda la 
+                            <a href="marina.html#marina">Marine</a>. Los cuatro
+                            emperadores constituyen uno de los tres pilares que equilibran el poder en el mundo.</p>
+                    </div>
+                </div>
+            </div>        
             
-            <div class="estiloFlexColumn" id="yonko2">
-                <div class="estiloFlexColumn subtitulo3" id="shanks">
+            <div class="row estiloFlexColumn" id="yonko2">
+                <div class="col subtitulo3" id="shanks">
                     <img src="media/shanks.jpg" alt="Shanks">
                     <h3 class="fuente7">Shanks el Pelirrojo</h3>
-                    <p class="fuente1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, laudantium. Natus a
-                            laborum, inventore
-                            impedit voluptatum eum hic autem provident unde dolorum officia voluptates in delectus, assumenda
-                            atque, ad eveniet.</p>
-                    <img src="media/banderashanks.jpg" alt="Bandera de Shanks">
+                    <p class="fuente1 text-center">Shanks es el pirata que le dió a <a href="mugiwaras.html#luffy">Luffy</a> su característico
+                    sombrero de paja, luego de sacrificar su brazo izquierdo para salvarlo de un monstruo marino. En su momento, cuando era joven,
+                    Shanks perteneció a la tripulación de Gol D. Roger junto con <a href="otrosPiratas.html#buggy">Buggy el payaso</a>.
+                    Su recompensa actual es de 4,048,900,000 Beries, y se especula que posee conexiones con el Gobierno Mundial.</p>                   
                 </div>
         
-                <div class="estiloFlexColumn subtitulo3" id="bigmom">
-                    <img src="media/bigmom.webp" alt="Big Mom">
+                <div class="col subtitulo3" id="bigmom">
+                    <img src="media/bigmom.jpg" alt="Big Mom">
                     <h3 class="fuente7">Big Mom</h3>
-                    <p class="fuente1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id amet aut veniam animi
-                            tempora, quae vel
-                            nihil tenetur exercitationem ratione quod provident itaque iste doloremque magnam vero aspernatur
-                            consectetur quia!</p>
-                    <img src="media/banderabigmom.jpg" alt=" de Big Mom">
+                    <p class="fuente1 text-center">Charlotte LinLin (Big Mom) es la lider de los piratas Big Mom, cuya tripulación está formada
+                        principalmente por sus 64 hijos y otros piratas asociados. Es la matriarca de Totto Land, una nación enorme con Población de
+                        todas las razas del mundo. Su recompensa actual es de 4.388.000.000 Beries.
+                    </p>
                 </div>
         
-                <div class="estiloFlexColumn subtitulo3" id="kaido">
-                    <img src="media/kaido.webp" alt="kaido">
+                <div class="col subtitulo3" id="kaido">
+                    <img src="media/kaido.jpg" alt="kaido">
                     <h3 class="fuente7">Kaido</h3>
-                    <p class="fuente1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores mollitia nesciunt
-                            quasi
-                            voluptatum labore culpa dolores quos dolor, magni explicabo, ut sequi repudiandae molestiae dolorem,
-                            illo sapiente vitae odit facere!</p>
-                    <img src="media/banderakaido.jpg" alt="Bandera de kaido">
+                    <p class="fuente1 text-center">Kaido es el lider de los piratas bestia, y es un humano que comió la fruta legendaria ryu-ryu, la
+                        cual le permite transformarse en un gigantesco y temible dragón. Su base actual se encuentra en la isla Onigashima, en las afueras
+                        del pais de Wano. Kaido fue uno de los principales partícipes del golpe de estado que sufrió este país hace 20 años, ayudando a su
+                        gobernante actual (Kurozumi Orochi) a subir al poder. Durante su juventud, Kaido y <a href="otrosPiratas.html#bigmom">Big Mom</a> fueron 
+                        compañeros en la tripulación de Rocks D. Xebec, un pirata de la época de gol D. Roger. Su recompensa actual es de 4.611.100.000 Beries.
+                    </p>
                 </div>
         
-                <div class="estiloFlexColumn" id="kurohige">
-                    <img src="media/kurohige.webp" alt="Barbanegra">
+                <div class="col subtitulo3" id="kurohige">
+                    <img src="media/kurohige.jpg" alt="Barbanegra">
                     <h3 class="fuente7">Marshall D. Teach (Barbanegra)</h3>
-                    <p class="fuente1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium
-                            perferendis, dolor
-                            placeat repellat similique temporibus molestias illum. Delectus quae odit dolorum neque numquam
-                            distinctio voluptas incidunt quod nihil sint.</p>
-                    <img src="media/banderakurohige.jpg" alt="bandera de Barba Negra">
+                    <p class="fuente1 text-center">Marshall D. Teach es el único ser vivo conocido con el poder de dos frutas del diablo. Posee tanto el poder 
+                        de la fruta Yami-Yami (la cual le permite invocar masa oscura que consume todo lo que toca) como el de la fruta Gura-Gura (la cual le 
+                        permite invocar terremotos). Teach perteneció hace muchos años a la tripulación de <a href="otrosPiratas.html#barbablanca">Barbablanca</a>,
+                        pero desertó la misma luego de matar a uno de sus compañeros para robar la fruta Yami-Yami. Esto hizo que Ace fuera en su persecución, y cuando
+                        finalmente se enfrentaron Teach lo venció y lo entregó al gobierno mundial, lo cual le valió momentaneamente el título de Shichibukai.
+                        Al momento de la muerte de Barbablanca durante el rescate de Ace, Teach de alguna forma logró robarle su fruta del diablo convirtiendose en el
+                        único usuario conocido de dos frutas simultáneamente. Su recompensa actual es de 2.247.600.000 Beries.
+                    </p>
                 </div>
         
-                <div class="estiloFlexColumn" id="barbablanca">
-                    <img src="media/barbablanca.webp" alt="Barbablanca">
+                <div class="col" id="barbablanca">
+                    <img src="media/barbablanca.jpg" alt="Barbablanca">
                     <h3 class="fuente7">Edward Newgate (Barbablanca)</h3>
-                    <p class="fuente1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusantium
-                        perferendis, dolor
-                        placeat repellat similique temporibus molestias illum. Delectus quae odit dolorum neque numquam
-                        distinctio voluptas incidunt quod nihil sint.</p>
-                    <img src="media/banderabarbablanca.jpg" alt="bandera de Barbablanca">
+                    <p class="fuente1 text-center">Este ex-yonko fue conocido como "El hombre más fuerte del mundo" y se decía que era el único
+                        que podía rivalizar en poder a Gol D. Roger. Encontró su muerte enfrentando el solo a todo el poder de la 
+                        <a href="marina.html#marina">Marina</a> durante la batalla por el rescate de Ace, dando tiempo a todos los demás de que 
+                        huyan. Consideraba a su tripulación su familia, por lo que nunca pudo perdonar a 
+                        <a href="otrosPiratas.html#kurohige">Barbanegra</a> por su traición. Su recompensa al momento de su muerte era 
+                        de 5.046.000.000 Beries, la más alta entre los Yonko.
+                    </p>
                 </div>
             </div>
     
             <!-- Shichibukai -->
-    
-            <div id="shichibukai">
-                <h2 class="fuente2">Los Siete Señores de la Guerra del Mar</h2>
-                <p class="fuente1">Se conoce como los siete señores de la guerra del mar (Shichibukai) a siete piratas
-                    seleccionados por el gobierno mundial para trabajar en conjunto con la <a
-                        href="marina.html#marina">Marine</a>. Estos piratas gozan de carta blanca sobre actos de saqueo y
-                    vandalismo, pero deben presentarse para cooperar y luchar junto a la Marine si así les es requerido.
-                    Constituyen uno de los tres grandes pilares que mantienen el equilibrio de poder en el mundo.</p>
+
+
+            <div class="row mt-5 mb-5" id="shichibukai">
+                <div class="col">
+                <div class="col text-center">
+                    <h2 class="fuente2">Los Siete Señores de la Guerra del Mar</h2>
+                    <p class="fuente1">Se conoce como los siete señores de la guerra del mar (Shichibukai) a siete
+                        piratas
+                        seleccionados por el gobierno mundial para trabajar en conjunto con la <a
+                            href="marina.html#marina">Marine</a>. Estos piratas gozan de carta blanca sobre actos de
+                        saqueo y
+                        vandalismo, pero deben presentarse para cooperar y luchar junto a la Marine si así les es
+                        requerido.
+                        Constituyen uno de los tres grandes pilares que mantienen el equilibrio de poder en el mundo.
+                    </p>
+                </div>
+                </div>
             </div>
-    
-            <div class="estiloFlexColumn" id="shichibukai2">
-                <div class="gridShiDer subtitulo marginMarines" id="crocodile">
-                    <h3>Crocodile</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt neque, obcaecati rem qui dolore
-                        ipsam velit provident dolorem reiciendis praesentium. Delectus totam, mollitia temporibus ad quos
-                        error dolor soluta vero.</p>
-                    <img src="media/crocodile.webp" alt="Crocodile">
-                </div>
-    
-                <div class="gridShiIzq subtitulo marginMarines" id="boaHancock">
-                    <img src="media/boaHancock.webp" alt="Boa Hancock">
-                    <h3>Boa Hancock</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus veniam a cupiditate
-                        harum adipisci corporis nesciunt ea quasi omnis eligendi beatae alias, dolorum iure dolore aliquid
-                        amet id consectetur?</p>
-                </div>
-    
-                <div class="gridShiDer subtitulo marginMarines" id="mihawk">
-                    <h3>Dracule Mihawk</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus obcaecati praesentium quibusdam
-                        veniam numquam. Quasi similique omnis unde maxime eaque voluptas, quo numquam et nulla animi
-                        repellat cum totam natus?</p>
-                    <img src="media/mihawk.webp" alt="Dracule Mihawk">
-                </div>
-    
-                <div class="gridShiIzq subtitulo marginMarines" id="kuma">
-                    <img src="media/kuma.webp" alt="Bartholomew Kuma">
-                    <h3>Bartholomew Kuma</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ducimus voluptates voluptatibus eos
-                        dignissimos fugit facilis voluptas, officia rem, quos recusandae earum. Ut placeat delectus facilis
-                        aspernatur adipisci temporibus maxime.</p>
-                </div>
-    
-                <div class="gridShiDer subtitulo marginMarines" id="moria">
-                    <h3>Gecko Moria</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores numquam dolorem officiis nam
-                        impedit laudantium fuga. Deserunt sapiente illo voluptate tempora dolore molestias qui, ipsum
-                        architecto quibusdam aperiam dolorem iste?F</p>
-                    <img src="media/moria.webp" alt="Gecko Moria">
-                </div>
-    
-                <div class="gridShiIzq subtitulo marginMarines" id="law">
-                    <img src="media/law.webp" alt="Trafalgar D. Law">
-                    <h3>Trafalgar D. Law</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit cumque nulla nostrum
-                        perspiciatis error quas unde doloremque, quaerat culpa vel voluptatibus, quia corrupti molestias,
-                        ullam accusantium temporibus assumenda laboriosam.</p>
-                </div>
-    
-                <div class="gridShiDer subtitulo marginMarines" id="doflamingo">
-                    <h3>Donquixote Doflamingo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam aliquam labore neque,
-                        reprehenderit voluptatem nisi quibusdam eos sapiente amet facilis similique. Quis autem esse,
-                        placeat temporibus ipsam eaque voluptas?</p>
-                    <img src="media/doflamingo.webp" alt="Donquixote Doflamingo">
-                </div>
-    
-                <div class="gridShiIzq subtitulo marginMarines" id="buggy">
-                    <img src="media/buggy.webp" alt="Buggy">
-                    <h3>Buggy el payaso</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis itaque aut dignissimos
-                        illo enim rem labore quasi molestias nihil modi neque, repellat, id, pariatur ipsam doloribus
-                        eligendi! Tenetur, cum?</p>
-                </div>
-    
-                <div class="gridShiDer subtitulo marginMarines" id="weevil">
-                    <h3>Edward Weevil</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam aliquam labore neque,
-                        reprehenderit voluptatem nisi quibusdam eos sapiente amet facilis similique. Quis autem esse,
-                        placeat temporibus ipsam eaque voluptas?</p>
-                    <img src="media/weevil.jpg" alt="Edward Weevil">
-                </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col">                
+                <div class="accordion" id="shichibukai2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="crocodile">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Crocodile
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="crocodile"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/crocodile.webp" class="mx-auto d-block" alt="Crocodile">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="hancock">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Boa Hancock
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="hancock"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/boaHancock.webp" class="mx-auto d-block" alt="Mihawk">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="mihawk">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Dracule Mihawk
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="mihawk"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/mihawk.webp" class="mx-auto d-block" alt="Mihawk">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="kuma">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Bartholomew Kuma
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="kuma"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/kuma.png" class="mx-auto d-block" alt="Kuma">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="moria">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Gecko Moria
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="moria"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/moria.webp" class="mx-auto d-block" alt="Moria">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="law">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Trafalgar D. Law
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="law"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/law.webp" class="mx-auto d-block" alt="Law">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="doflamingo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Doquixote Doflamingo
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="doflamingo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/doflamingo.webp" class="mx-auto d-block" alt="Doflamingo">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="buggy">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Buggy, el Payaso
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="buggy"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/buggy.webp" class="mx-auto d-block" alt="Buggy">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="weevil">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Edward Weevil
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="weevil"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row align-items-center">
+                                <div class="col-lg-4">
+                                <img src="media/weevil.jpg" class="mx-auto d-block" alt="Weevil">
+                                </div>
+                                <div class="col-lg-8">
+                                <p class="fuente1 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit vero
+                                    odio officiis earum voluptate, in aliquam odit possimus minima dolore! Incidunt
+                                    ipsum voluptate delectus repellendus? Ipsum fugit unde quam?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                </div>               
             </div>
         </main>
+
 
         <!-- Footer con el disclaimer -->
     
@@ -215,6 +380,11 @@
             </p>
         </footer>    
     </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

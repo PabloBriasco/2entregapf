@@ -130,11 +130,6 @@ h1 {
     flex-direction: column;
 }
 
-.estiloFlexRow {
-    display: flex;
-    flex-direction: row;
-}
-
 .noMarginTop {
     margin-top: 0%;
 }
@@ -231,6 +226,8 @@ main {
 
 footer {
     grid-area: footer;
+    display: flex;
+    align-items: center;
     width: 100%;
     background-color: royalblue;
     border-radius: 20px;
@@ -322,9 +319,7 @@ footer p {
     border-radius: 20px;
 }
 
-#marines {
-    display: flex;
-    flex-direction: column;
+#marines {    
     margin: 10% 8%;
     background-color: whitesmoke;
     border-style: double;
